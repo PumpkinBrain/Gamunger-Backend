@@ -6,11 +6,15 @@ package com.gamunger.api.controllers;
 
 import com.gamunger.api.entities.FavoriteGame;
 import com.gamunger.api.repositories.FavoriteGameRepo;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  *
  * @author dmendes
  */
+@RestController
+@RequestMapping("favoritegame")
 public class FavoriteGameController extends BaseController<FavoriteGame>{
     
     public FavoriteGameController(FavoriteGameRepo repo) {
