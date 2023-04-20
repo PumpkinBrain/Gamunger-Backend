@@ -16,12 +16,11 @@ import org.springframework.web.bind.annotation.RestController;
  * @author dmendes
  * @param <T>
  */
-@RestController
 public class BaseController<T> {
     
-    CrudRepository<T, Object> repo;
+    CrudRepository repo;
 
-    public BaseController(CrudRepository<T, Object> repo) {
+    public BaseController(CrudRepository repo) {
         this.repo = repo;
     }
     
